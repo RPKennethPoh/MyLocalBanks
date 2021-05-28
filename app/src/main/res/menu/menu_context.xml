@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/website"
+        android:orderInCategory="100"
+        android:title="Visit Website" />
+    <item
+        android:id="@+id/contact"
+        android:orderInCategory="101"
+        android:title="Contact Bank" />
+    <item
+        android:id="@+id/favourite"
+        android:orderInCategory="102"
+        android:title="Toggle Favourite" />
+
+</menu>
