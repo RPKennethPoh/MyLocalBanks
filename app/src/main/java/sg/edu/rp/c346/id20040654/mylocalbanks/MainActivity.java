@@ -50,14 +50,14 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.english) {
-            btnDBS.setText("DBS");
-            btnOCBC.setText("OCBC");
-            btnUOB.setText("UOB");
+            btnDBS.setText(getString(R.string.dbs));
+            btnOCBC.setText(getString(R.string.ocbc));
+            btnUOB.setText(getString(R.string.uob));
             return true;
         } else if (id == R.id.chinese) {
-            btnDBS.setText("星展銀行");
-            btnOCBC.setText("華僑銀行");
-            btnUOB.setText("大华银行");
+            btnDBS.setText(getString(R.string.dbsChinese));
+            btnOCBC.setText(getString(R.string.ocbcChinese));
+            btnUOB.setText(getString(R.string.uobChinese));
             return true;
         } else {
             Log.d("translate", "Error with translate option menu");
@@ -89,11 +89,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if(selectedView == btnDBS) {
-            contextChoice(btnDBS, id, "https://www.dbs.com.sg/index/default.page", "tel:18001111111");
+            contextChoice(btnDBS, id, getString(R.string.dbsWebsite), "tel:" + getString(R.string.dbsPhone));
         } else if (selectedView == btnOCBC) {
-            contextChoice(btnOCBC, id, "https://www.ocbc.com/group/gateway", "tel:18003633333");
+            contextChoice(btnOCBC, id, getString(R.string.ocbcWebsite), "tel:" + getString(R.string.ocbcPhone));
         } else if (selectedView == btnUOB) {
-            contextChoice(btnUOB, id, "https://www.uobgroup.com/uobgroup/default.page", "tel:18002222121");
+            contextChoice(btnUOB, id, getString(R.string.uobWebsite), "tel:" + getString(R.string.uobPhone));
         }
 
         return super.onContextItemSelected(item); //pass menu item to the superclass implementation

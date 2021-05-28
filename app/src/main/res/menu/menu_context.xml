@@ -3,14 +3,14 @@
     <item
         android:id="@+id/website"
         android:orderInCategory="100"
-        android:title="Visit Website" />
+        android:title="@string/contextWebsite" />
     <item
         android:id="@+id/contact"
         android:orderInCategory="101"
-        android:title="Contact Bank" />
+        android:title="@string/contextContact" />
     <item
         android:id="@+id/favourite"
         android:orderInCategory="102"
-        android:title="Toggle Favourite" />
+        android:title="@string/contextFavourite" />
 
 </menu>
